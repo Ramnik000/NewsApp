@@ -1,13 +1,71 @@
+/* Custom.css */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./Components/news.png'); /* Set the background image */
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px; /* Add padding to create space around the content */
+  text-align: center; /* Center the content horizontally */
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  font-weight: bold;
+  font-size: large;
+}
+
+.btn-primary {
+  background-color: black;
+  border-color:white;
+  font-size: 1.1rem; /* Increase the font size of the text link */
+  padding: 10px 20px; /* Add padding to the text link */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 24px; /* Font size */
+  font-style: italic; /* Italics */
+  margin-top: 20px; /* Adjust the margin */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Adjust image size */
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* Adjust the height of the image */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Additional adjustments for links */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+}
+.my-4{
+  text-align: center;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
+
 }
